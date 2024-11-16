@@ -1,46 +1,65 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="じゃんけんグリコ"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「じゃんけんグリコ」[l][r]
 
-メロスは激怒した。[l][r]
+ある日の夜，友達が僕に言った。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+「今からじゃんけんグリコをしよう。じゃんけんをしてグーを出して勝ったら負けた方が勝った方に300円の晩飯を，チョキ，もしくはパーで勝ったら負けた方は勝った方に600円の晩飯をおごることにしよう。」[l][r]
 
-(中略)[l][r]
+唐突に言われた言葉に僕は驚いたが，最近金欠の僕にとって勝てば晩飯がおごってもらえるこの申し出は有り難かった。[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+「望むところだよ。僕は生まれてこの方じゃんけんで一度も負けたことがないんだ。じゃあ早速じゃんけんをしよう。じゃんけん・・・」[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_gu] →グー [endlink][r]
+[link target=*tag_tyo] →チョキ [endlink][r]
+[link target=*tag_pa] →パー [endlink][r]
 [s]
 
-*tag_sleep
+*tag_gu
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=janken.png time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+友達はグーを出していた。[l][r]
+
+晩飯をおごってはもらえなかったが，じゃんけんの無敗記録がまた伸びたので良しとしよう。[r]
+
+【 NOMAL END 】[l][cm]
+
+[jump target=*start]
+
+*tag_tyo
+
+[bg storage=ochikomi.png time=500]
+
+[cm]
+友達はグーを出していた。[l][r]
+
+じゃんけんの無敗記録が途切れたうえ，友達に300円の月見そばをおごることになってしまった。今日の僕の晩飯はパンの耳に決定した。[r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_pa
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+[bg storage=dance.png time=500]
+
+[cm]
+友達はグーを出していた。[l][r]
+
+じゃんけんに勝った！[l][r]
+
+600円のラーメンをおごってもらえることになり，久しぶりに僕のお腹は満たされた。[r]
+
+【 HAPPY END 】[l][cm]
 
 [jump target=*start]
